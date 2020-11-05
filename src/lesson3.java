@@ -42,7 +42,7 @@ public class lesson3 {
     }
 
     public static String charExit (String answer) {
-        String addChar = "x";
+        String addChar = "#";
         for (int charWord = answer.length(); charWord < 15; charWord++) {
             answer = answer + addChar;
         }
@@ -61,7 +61,7 @@ public class lesson3 {
             if (firstWord.charAt(charWord) == secondWord.charAt(charWord)) {
                 answerWord = answerWord + firstWord.charAt(charWord);
             } else {
-                answerWord = answerWord + "x";
+                answerWord = answerWord + "#";
             }
         }
         return answerWord;
