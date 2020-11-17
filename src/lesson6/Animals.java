@@ -19,10 +19,10 @@ public class Animals {
         if (maxDistanceRun == 0) {
         System.out.print("Animal " + name + " does not know how to run");}
         else if (maxDistanceRun < distance) {
-            System.out.println((maxDistanceRun > distance) + " -> " + name + " run only " + maxDistanceRun + " m");
+            System.out.println((maxDistanceRun >= distance) + " -> " + name + " run only " + maxDistanceRun + " m");
         }
         else {
-            System.out.println( (maxDistanceRun > distance) +" -> " + name + " run: "+ distance + " m ");
+            System.out.println( (maxDistanceRun >= distance) +" -> " + name + " run: "+ distance + " m ");
         }
     }
 
@@ -32,10 +32,10 @@ public class Animals {
             System.out.print("Animal "+ name + " does not know how to jump");
         }
         else if ( maxHeightJump < height){
-            System.out.println((maxDistanceRun > height) + " -> " + name +" jump only " + maxHeightJump+" m");
+            System.out.println((maxDistanceRun >= height) + " -> " + name +" jump only " + maxHeightJump+" m");
         }
         else {
-            System.out.println((maxDistanceRun > height)  + " -> " + name + " jump "+ height +" m ");
+            System.out.println((maxDistanceRun >= height)  + " -> " + name + " jump "+ height +" m ");
         }
     }
     public void swim(float distance){
@@ -43,10 +43,10 @@ public class Animals {
             System.out.print("Animal " + name + " does not know how to swim");
         }
         else if (maxDistanceSwim < distance){
-            System.out.println((maxDistanceSwim > distance) + " -> " + name +" swim only " + maxDistanceSwim+" m");
+            System.out.println((maxDistanceSwim >= distance) + " -> " + name +" swim only " + maxDistanceSwim+" m");
         }
         else {
-            System.out.println((maxDistanceRun > distance) + " -> " + name + " swim " + distance +" m ");
+            System.out.println((maxDistanceRun >= distance) + " -> " + name + " swim " + distance +" m ");
         }
     }
     public void info(){
