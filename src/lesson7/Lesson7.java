@@ -16,7 +16,6 @@ while(groupOfCatsSatiety(catsArray) == false) {
     for (int cat = 0; cat < catsArray.length; cat++) {
         if ((catsArray[cat].getAppetit() <= plate.getFood()) && (catsArray[cat].isSatiety() == false) ) {
             catsArray[cat].eat(plate);
-            catsArray[cat].setSatiety(true);
             System.out.println(catsArray[cat].getName() + " поел " + catsArray[cat].isSatiety());
         }
         else if ((catsArray[cat].getAppetit() > plate.getFood()) && (catsArray[cat].isSatiety() == false)){
@@ -41,4 +40,5 @@ while(groupOfCatsSatiety(catsArray) == false) {
          }
         return satisfaction;
     }
+
 }

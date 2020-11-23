@@ -14,7 +14,9 @@ public class Cat {
     public void setSatiety (boolean satiety) {
         this.satiety = satiety;
     }
-    public void eat (Plate plate){ plate.decreaseFood(appetit);}
+    public void eat (Plate plate){ plate.decreaseFood(appetit);
+    setSatiety(true);
+    }
 
     public int getAppetit () {
         return appetit;
